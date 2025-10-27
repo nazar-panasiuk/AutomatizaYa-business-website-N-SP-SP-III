@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>AutoLlamas</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta
+            content="automatización sin código, low-code, no-code, automatización empresarial, flujos de trabajo, integración API, eficiencia operativa, plataformas sin código"
+            name="keywords"
+        />
+        <meta
+            content="Soluciones Low-code / No-code para automatizar procesos empresariales: diseño de flujos, integración de herramientas, plantillas listas para usar y formación para equipos. Mejora la eficiencia sin escribir código."
+            name="description"
+        />
+
+        <!-- Favicon -->
+        <link href="img/logo.png" rel="icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div
+                class="spinner-grow text-primary"
+                style="width: 3rem; height: 3rem"
+                role="status"
+            >
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <nav
+            class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0"
+        >
+            <a
+                href="index.html"
+                class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5"
+            >
+                <h2 class="mb-2 text-white">AutoLlamas</h2>
+            </a>
+            <button
+                type="button"
+                class="navbar-toggler me-4"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <a href="index.html#about" class="nav-item nav-link"
+                        >Visión general</a
+                    >
+                    <a href="product.html" class="nav-item nav-link"
+                        >Producto</a
+                    >
+                    <a href="index.html#service" class="nav-item nav-link"
+                        >Soluciones</a
+                    >
+                    <a href="index.html#feature" class="nav-item nav-link"
+                        >Ventajas</a
+                    >
+                    <a href="index.html#contact" class="nav-item nav-link"
+                        >Contacto</a
+                    >
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 pb-5">
+            <div class="owl-carousel header-carousel position-relative mb-5">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/carousel-1.jpg" alt="" />
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                        style="background: rgba(6, 3, 21, 0.5)"
+                    >
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h5
+                                        class="text-white text-uppercase mb-3 animated slideInDown"
+                                    >
+                                        Automatización inteligente sin código
+                                    </h5>
+                                    <h1
+                                        class="display-3 text-white animated slideInDown mb-4"
+                                    >
+                                        Optimiza tus procesos con Low-code /
+                                        No-code
+                                    </h1>
+                                    <p
+                                        class="fs-5 fw-medium text-white mb-4 pb-2"
+                                    >
+                                        <strong>AutoLlamas</strong> impulsa la
+                                        eficiencia empresarial mediante
+                                        plataformas visuales que permiten crear
+                                        flujos de trabajo, formularios e
+                                        integraciones sin necesidad de
+                                        programación. Ideal para equipos que
+                                        buscan rapidez, control y escalabilidad.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/carousel-2.jpg" alt="" />
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                        style="background: rgba(6, 3, 21, 0.5)"
+                    >
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h5
+                                        class="text-white text-uppercase mb-3 animated slideInDown"
+                                    >
+                                        Conecta tus herramientas sin programar
+                                    </h5>
+                                    <h1
+                                        class="display-3 text-white animated slideInDown mb-4"
+                                    >
+                                        Integraciones empresariales visuales
+                                    </h1>
+                                    <p
+                                        class="fs-5 fw-medium text-white mb-4 pb-2"
+                                    >
+                                        <strong>AutoLlamas</strong> permite
+                                        conectar aplicaciones, hojas de cálculo,
+                                        sistemas internos y servicios externos
+                                        mediante conectores visuales y reglas
+                                        lógicas configurables, sin escribir una
+                                        sola línea de código.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/carousel-3.jpg" alt="" />
+                    <div
+                        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                        style="background: rgba(6, 3, 21, 0.5)"
+                    >
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h5
+                                        class="text-white text-uppercase mb-3 animated slideInDown"
+                                    >
+                                        Escala tu negocio sin código
+                                    </h5>
+                                    <h1
+                                        class="display-3 text-white animated slideInDown mb-4"
+                                    >
+                                        Automatización ágil para equipos
+                                        digitales
+                                    </h1>
+                                    <p
+                                        class="fs-5 fw-medium text-white mb-4 pb-2"
+                                    >
+                                        <strong>AutoLlamas</strong> ofrece una
+                                        plataforma Low-code / No-code para que
+                                        las empresas digitalicen tareas
+                                        repetitivas, mejoren la trazabilidad y
+                                        aceleren la toma de decisiones en sus
+                                        operaciones diarias.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- About Start -->
+        <div id="about" class="container-fluid overflow-hidden py-5 px-lg-0">
+            <div class="container about py-5 px-lg-0">
+                <div class="row g-5 mx-lg-0">
+                    <div
+                        class="col-lg-6 ps-lg-0 wow fadeInLeft"
+                        data-wow-delay="0.1s"
+                        style="min-height: 400px"
+                    >
+                        <div class="position-relative h-100">
+                            <img
+                                class="position-absolute img-fluid w-100 h-100"
+                                src="img/about.jpg"
+                                style="object-fit: cover"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-6 about-text wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <h6 class="text-secondary text-uppercase mb-3">
+                            Visión general
+                        </h6>
+                        <h1 class="mb-5">
+                            Guía práctica: Soluciones Low-code / No-code para
+                            automatización empresarial
+                        </h1>
+                        <p class="mb-5">
+                            Las plataformas Low-code / No-code están
+                            transformando la forma en que las empresas gestionan
+                            sus operaciones. Con <strong>AutoLlamas</strong>,
+                            las organizaciones pueden automatizar tareas,
+                            formularios y aprobaciones internas de manera
+                            rápida, intuitiva y sin necesidad de programadores.
+                            <br /><br />
+
+                            Creamos entornos visuales donde los equipos pueden
+                            diseñar flujos personalizados, conectar múltiples
+                            herramientas y supervisar el rendimiento en tiempo
+                            real. Todo ello contribuye a reducir errores
+                            manuales, optimizar recursos y mejorar la
+                            productividad global. <br /><br />
+
+                            Ya sea para gestionar solicitudes, integrar datos o
+                            coordinar procesos complejos, nuestras soluciones
+                            Low-code / No-code se adaptan al ritmo y tamaño de
+                            tu negocio, garantizando resultados rápidos y
+                            escalables sin complejidad técnica.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Fact Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h6 class="text-secondary text-uppercase mb-3">
+                            Resumen
+                        </h6>
+                        <h1 class="mb-5">
+                            Información esencial para comparar soluciones
+                            Low-code / No-code para la automatización
+                            empresarial
+                        </h1>
+                        <p class="mb-5">
+                            Esta guía proporciona un panorama estructurado de
+                            tres soluciones líderes en Low-code/No-code
+                            orientadas a la automatización de procesos
+                            empresariales. Cada opción se diferencia por su
+                            modelo de uso —desde automatizaciones de alta
+                            actividad hasta enfoques de mantenimiento mínimo— y
+                            se basa en análisis técnicos, experiencias de
+                            implementación y criterios prácticos para facilitar
+                            decisiones informadas.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-sm-6">
+                                <div
+                                    class="bg-primary p-4 mb-4 wow fadeIn"
+                                    data-wow-delay="0.3s"
+                                >
+                                    <p class="text-white mb-0">
+                                        Pensada para operaciones con flujo
+                                        intenso: combina monitorización en
+                                        tiempo real, reglas automatizadas y
+                                        orquestación entre sistemas. Requiere
+                                        supervisión frecuente para adaptar
+                                        reglas y optimizar procesos que cambian
+                                        con rapidez.
+                                    </p>
+                                </div>
+                                <div
+                                    class="bg-secondary p-4 wow fadeIn"
+                                    data-wow-delay="0.5s"
+                                >
+                                    <p class="text-white mb-0">
+                                        Ideal para responsables que gestionan
+                                        procesos por ciclos semanales: se apoya
+                                        en análisis de datos históricos y
+                                        métricas operativas para proponer
+                                        mejoras y automatizaciones con
+                                        revisiones programadas.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div
+                                    class="bg-success p-4 wow fadeIn"
+                                    data-wow-delay="0.7s"
+                                >
+                                    <p class="text-white mb-0">
+                                        Orientada a la estabilidad y al
+                                        mantenimiento reducido: optimiza tareas
+                                        recurrentes y estandarizadas,
+                                        permitiendo escalar operaciones con muy
+                                        poca intervención humana.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fact End -->
+
+        <!-- Service Start -->
+        <div id="service" class="container-xxl py-5">
+            <div class="container py-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="text-secondary text-uppercase">
+                        Contenido de la guía
+                    </h6>
+                    <h1 class="mb-5">
+                        Análisis de plataformas Low-code/No-code para la
+                        automatización empresarial según modelos de uso
+                    </h1>
+                </div>
+                <div class="row g-4">
+                    <div
+                        class="col-md-6 col-lg-4 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img
+                                    class="img-fluid"
+                                    src="img/service-1.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <h4 class="mb-3">
+                                Automatización operativa intensiva
+                            </h4>
+                            <p>
+                                <strong>Immediate AI</strong> se adapta a
+                                equipos que necesitan respuestas rápidas y
+                                ajustes continuos en sus flujos. Recomendada
+                                para procesos con alta variabilidad que
+                                requieren orquestación multicanal y alertas en
+                                tiempo real.
+                                <br />
+                                <strong>Immediate Edge</strong> actúa como
+                                soporte para automatizaciones con ciclos
+                                semanales: facilita el análisis de rendimiento y
+                                sugiere optimizaciones sin intervención diaria.
+                                <br />
+                                <strong>SmartBit Boost</strong> está enfocada en
+                                automatizaciones estratégicas a largo plazo:
+                                aporta estabilidad, fácil mantenimiento y
+                                escalado progresivo de procesos críticos.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 col-lg-4 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img
+                                    class="img-fluid"
+                                    src="img/service-2.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <h4 class="mb-3">
+                                Estrategias de automatización híbridas
+                            </h4>
+                            <p>
+                                <strong>Immediate AI</strong> ofrece
+                                integraciones profundas y permite ajustes finos
+                                en flujos complejos; su máximo rendimiento
+                                requiere perfiles con conocimientos técnicos.
+                                <br />
+                                <strong>Immediate Edge</strong> es eficaz para
+                                procesos repetitivos con métricas estables: su
+                                curva de adopción es moderada y permite delegar
+                                revisiones periódicas a los responsables de
+                                proceso.
+                                <br />
+                                <strong>SmartBit Boost</strong> prioriza
+                                simplicidad y robustez, ideal cuando el objetivo
+                                principal es reducir errores manuales y
+                                garantizar continuidad operativa.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 col-lg-4 wow fadeInUp"
+                        data-wow-delay="0.7s"
+                    >
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img
+                                    class="img-fluid"
+                                    src="img/service-3.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <h4 class="mb-3">
+                                Automatización estratégica y sostenible
+                            </h4>
+                            <p>
+                                <strong>Immediate AI</strong> destaca en
+                                entornos dinámicos que necesitan respuestas
+                                ágiles y reglas adaptativas.
+                                <br />
+                                <strong>Immediate Edge</strong> es apropiada
+                                para quienes optimizan procesos mediante
+                                análisis histórico y reglas periódicas.
+                                <br />
+                                <strong>SmartBit Boost</strong> es la opción
+                                para alcanzar resultados sostenibles con mínima
+                                intervención: perfecta para automatizar tareas
+                                administrativas y consolidar procesos
+                                estandarizados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- Feature Start -->
+        <div id="feature" class="container-fluid overflow-hidden py-5 px-lg-0">
+            <div class="container feature py-5 px-lg-0">
+                <div class="row g-5 mx-lg-0">
+                    <div
+                        class="col-lg-6 feature-text wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <h6 class="text-secondary text-uppercase mb-3">
+                            Características
+                        </h6>
+                        <h1 class="mb-5">
+                            Elementos clave para comparar plataformas
+                            Low-code/No-code
+                        </h1>
+                        <div
+                            class="d-flex mb-5 wow fadeInUp"
+                            data-wow-delay="0.3s"
+                        >
+                            <i
+                                class="fa fa-globe text-primary fa-3x flex-shrink-0"
+                            ></i>
+                            <div class="ms-4">
+                                <h5>Supervisión y orquestación centralizada</h5>
+                                <p class="mb-0">
+                                    <strong>Immediate AI</strong> integra
+                                    paneles en tiempo real y acciones
+                                    automatizadas para gestionar incidentes y
+                                    flujos. <br />
+                                    <strong>Immediate Edge</strong> facilita
+                                    informes periódicos y recomendaciones
+                                    basadas en datos operativos. <br />
+                                    <strong>SmartBit Boost</strong> favorece
+                                    automatismos predecibles con bajo coste de
+                                    mantenimiento.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="d-flex mb-5 wow fadeIn"
+                            data-wow-delay="0.5s"
+                        >
+                            <i
+                                class="fa fa-solid fa-seedling text-primary fa-3x flex-shrink-0"
+                            ></i>
+                            <div class="ms-4">
+                                <h5>Análisis de tendencias y optimización</h5>
+                                <p class="mb-0">
+                                    <strong>Immediate AI</strong> requiere
+                                    atención regular para detectar variaciones
+                                    operativas y ajustar reglas. <br />
+                                    <strong>Immediate Edge</strong> permite
+                                    identificar mejoras recurrentes que se
+                                    aplican en ciclos programados. <br />
+                                    <strong>SmartBit Boost</strong> optimiza
+                                    procesos a partir de patrones cíclicos con
+                                    mínima intervención.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="d-flex mb-0 wow fadeInUp"
+                            data-wow-delay="0.7s"
+                        >
+                            <i
+                                class="fa fa-headphones text-primary fa-3x flex-shrink-0"
+                            ></i>
+                            <div class="ms-4">
+                                <h5>Enfoque en resultados sostenibles</h5>
+                                <p class="mb-0">
+                                    <strong>Immediate AI</strong> está pensado
+                                    para reaccionar ante incidencias críticas.
+                                    <br />
+                                    <strong>Immediate Edge</strong> busca un
+                                    equilibrio entre intervención humana y
+                                    automatización planificada. <br />
+                                    <strong>SmartBit Boost</strong> sobresale
+                                    por mantener operaciones estables a lo largo
+                                    del tiempo con un coste de gestión reducido.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-6 pe-lg-0 wow fadeInRight"
+                        data-wow-delay="0.1s"
+                        style="min-height: 400px"
+                    >
+                        <div class="position-relative h-100">
+                            <img
+                                class="position-absolute img-fluid w-100 h-100"
+                                src="img/feature.jpg"
+                                style="object-fit: cover"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="text-center">
+                    <h6 class="text-secondary text-uppercase">Experiencias</h6>
+                    <h1 class="mb-0">Lo que opinan los usuarios</h1>
+                </div>
+                <div
+                    class="owl-carousel testimonial-carousel wow fadeInUp"
+                    data-wow-delay="0.1s"
+                >
+                    <div class="testimonial-item p-4 my-5">
+                        <i
+                            class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"
+                        ></i>
+                        <div class="d-flex align-items-end mb-4">
+                            <div class="ms-4">
+                                <h5 class="mb-1">María López</h5>
+                            </div>
+                        </div>
+                        <p class="mb-0">
+                            "La automatización intensiva con herramientas
+                            Low-code ha transformado la manera en que
+                            gestionamos tareas diarias. Aunque requiere
+                            supervisión continua, los resultados en eficiencia y
+                            velocidad de ejecución son notables desde los
+                            primeros días."
+                        </p>
+                    </div>
+                    <div class="testimonial-item p-4 my-5">
+                        <i
+                            class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"
+                        ></i>
+                        <div class="d-flex align-items-end mb-4">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Javier Gómez</h5>
+                            </div>
+                        </div>
+                        <p class="mb-0">
+                            "Adoptar un modelo de automatización programada nos
+                            permitió centralizar los flujos de trabajo sin
+                            dependencia de un equipo de desarrollo. Las
+                            integraciones visuales y los informes automáticos
+                            fueron claves para la mejora de nuestros procesos."
+                        </p>
+                    </div>
+                    <div class="testimonial-item p-4 my-5">
+                        <i
+                            class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"
+                        ></i>
+                        <div class="d-flex align-items-end mb-4">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Sofía Delgado</h5>
+                            </div>
+                        </div>
+                        <p class="mb-0">
+                            "Las soluciones No-code sostenibles son ideales para
+                            organizaciones que buscan automatizar sin necesidad
+                            de desarrolladores. En nuestro caso, la reducción de
+                            tareas manuales y la estandarización de procesos
+                            fueron inmediatas."
+                        </p>
+                    </div>
+                    <div class="testimonial-item p-4 my-5">
+                        <i
+                            class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"
+                        ></i>
+                        <div class="d-flex align-items-end mb-4">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Andrés Castillo</h5>
+                            </div>
+                        </div>
+                        <p class="mb-0">
+                            "Combinamos soluciones Low-code para procesos
+                            intensivos con herramientas No-code para operaciones
+                            más estables. El resultado fue una estructura
+                            automatizada, flexible y fácil de mantener sin
+                            aumentar los recursos técnicos."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quote Start -->
+        <div id="contact" class="container-xxl py-5">
+            <h1 style="text-align: center" class="mb-0">Contáctenos</h1>
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div
+                        style="height: 370px"
+                        class="col-lg-5 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1517.4506524523574!2d-3.6358654!3d40.4774484!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f9b1f642315%3A0x6d5358e27b119731!2sEPSA%20Spain%20Consulting%20Services!5e0!3m2!1suk!2sua!4v1761570288011!5m2!1suk!2sua"
+                            class="map-iframe"
+                            width="100%"
+                            height="400"
+                            style="border: 0; border-radius: 15px; height: 100%"
+                            allowfullscreen=""
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                    <div class="col-lg-7">
+                        <div
+                            class="bg-light text-center p-5 wow fadeIn"
+                            data-wow-delay="0.5s"
+                        >
+                            <form action="thanks.html" method="get">
+                                <div class="row g-3">
+                                    <div class="col-12 col-sm-6">
+                                        <input
+                                            type="text"
+                                            class="form-control border-0"
+                                            placeholder="Su nombre"
+                                            style="height: 55px"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <input
+                                            id="email"
+                                            type="email"
+                                            class="form-control border-0"
+                                            placeholder="Su correo electrónico"
+                                            style="height: 55px"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea
+                                            class="form-control border-0"
+                                            placeholder="Su mensaje"
+                                            required
+                                        ></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button
+                                            id="submit"
+                                            class="btn btn-primary w-100 py-3"
+                                            type="submit"
+                                        >
+                                            Enviar
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Quote End -->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid bg-dark text-light footer pt-5 wow fadeIn"
+            data-wow-delay="0.1s"
+            style="margin-top: 6rem"
+        >
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">AutoLlamas</h4>
+                        <p>
+                            Esta guía ofrece una comparación detallada de las
+                            soluciones Low-code y No-code aplicadas a la
+                            automatización empresarial. El objetivo es ayudar a
+                            las empresas a optimizar procesos, reducir errores
+                            humanos y aumentar la eficiencia operativa mediante
+                            plataformas accesibles que no requieren
+                            conocimientos de programación avanzada.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Dirección</h4>
+                        <p class="mb-2">
+                            <i class="fa fa-map-marker-alt me-3"></i>
+                            C. Vía de los Poblados, 1, Edificio E, Hortaleza,
+                            28033 Madrid
+                        </p>
+                        <a href="mailto:info@tradingkazakhstan.com">
+                            <p
+                                style="
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                "
+                                class="mb-2"
+                            >
+                                <i class="fa fa-envelope me-3"></i>
+                                +34658729509
+                            </p>
+                        </a>
+                        <a href="mailto:info@tradingkazakhstan.com">
+                            <p
+                                style="
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                "
+                                class="mb-2"
+                            >
+                                <i class="fa fa-envelope me-3"></i>
+                                auto_llamas@gmail.com
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Navegación</h4>
+                        <a href="index.html" class="btn btn-link">Inicio</a>
+                        <a href="index.html#about" class="btn btn-link"
+                            >Sobre nosotros</a
+                        >
+                        <a href="index.html#service" class="btn btn-link"
+                            >Servicios</a
+                        >
+                        <a href="index.html#feature" class="btn btn-link"
+                            >Características</a
+                        >
+                        <a href="index.html#contact" class="btn btn-link"
+                            >Contacto</a
+                        >
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Enlaces útiles</h4>
+                        <a class="btn btn-link" href="terms-of-use.html"
+                            >Términos de uso</a
+                        >
+                        <a class="btn btn-link" href="privacy-policy.html"
+                            >Política de privacidad</a
+                        >
+                        <a class="btn btn-link" href="cookie-policy.html"
+                            >Política de cookies</a
+                        >
+                        <a href="index.html#contact" class="btn btn-link"
+                            >Contacto</a
+                        >
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <p
+                            class="mb-0"
+                            style="font-size: 14px; line-height: 1.6"
+                        >
+                            Aviso: El uso de plataformas Low-code y No-code para
+                            la automatización de procesos empresariales implica
+                            ciertas limitaciones técnicas y riesgos de
+                            implementación si no se configuran adecuadamente.
+                            AutoLlamas no se responsabiliza por decisiones
+                            operativas derivadas del uso incorrecto de estas
+                            herramientas. Se recomienda siempre realizar pruebas
+                            antes de automatizar procesos críticos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a
+            href="#"
+            class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"
+            ><i class="bi bi-arrow-up"></i
+        ></a>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2>Consentimiento de cookies</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Este sitio web utiliza cookies para ofrecer una mejor
+                    experiencia de usuario y un contenido más relevante.
+                    <a href="cookie-policy.html">Más información...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Aceptar</button>
+                <button class="cookie-button" id="declineBtn">Rechazar</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>
